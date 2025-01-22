@@ -1,0 +1,11 @@
+class ChatBot:
+    def __init__(self):
+        self.default_responses = [
+            "Tell me more about that!",
+            "I'm here to help!",
+            "Can you explain that further?",
+        ]
+
+    def process_input(self, user_input):
+        # For now, it's a placeholder; replace with real NLP processing later
+        return self.default_responses[hash(user_input) % len(self.default_responses)]
